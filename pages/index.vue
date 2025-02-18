@@ -4,4 +4,5 @@
   <HeroSection />
   <BusinessFeature />
   <KeyServiceFeature />
+  <BizPerformFeature />
 </template>
