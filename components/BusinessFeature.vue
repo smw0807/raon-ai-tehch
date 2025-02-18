@@ -3,7 +3,7 @@
     <div
       class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl"
     >
-      <div>
+      <div class="mb-10">
         <h2 class="text-base/7 font-semibold text-center text-indigo-600">
           사업 분야
         </h2>
@@ -142,7 +142,7 @@
         </div>
       </div>
 
-      <div>
+      <div class="mt-10">
         <div class="grid lg:gap-8 lg:grid-cols-2 lg:items-center">
           <div class="lg:col-start-2">
             <h3

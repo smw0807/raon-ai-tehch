@@ -5,7 +5,7 @@
     >
       <div>
         <h2
-          class="text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900"
+          class="mb-10 text-3xl font-bold tracking-tight text-center sm:text-5xl dark:text-gray-900"
         >
           주요 서비스 영역
         </h2>
