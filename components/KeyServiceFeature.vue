@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section class="mb-20">
     <div
       class="container max-w-xl p-4 py-8 mx-auto space-y-16 lg:px-8 lg:max-w-7xl"
     >
