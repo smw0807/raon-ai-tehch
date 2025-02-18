@@ -1,7 +1,7 @@
 <template>
-  <section class="dark:bg-gray-100 dark:text-gray-800">
+  <section>
     <div
-      class="container max-w-xl p-6 py-12 mx-auto space-y-24 lg:px-8 lg:max-w-7xl"
+      class="container max-w-xl p-4 py-8 mx-auto space-y-16 lg:px-8 lg:max-w-7xl"
     >
       <div>
         <h2
@@ -9,41 +9,43 @@
         >
           주요 서비스 영역
         </h2>
-        <p
+        <!-- <p
           class="max-w-3xl mx-auto mt-4 text-xl text-center dark:text-gray-600"
         >
           Quando cetero his ne, eum admodum sapientem ut.
-        </p>
+        </p> -->
       </div>
 
-      <div class="container mx-auto p-8">
-        <div class="flex gap-4 mb-4">
-          <!-- As-Is 섹션 -->
+      <div class="container mx-auto px-4">
+        <!-- As-Is 섹션 -->
+        <div class="flex flex-col md:flex-row gap-4 mb-4">
           <div
-            class="w-32 bg-blue-100 p-4 rounded-lg flex items-center justify-center"
+            class="w-full md:w-32 bg-blue-100 p-4 rounded-lg flex items-center justify-center"
           >
             <span class="font-bold">As-Is</span>
           </div>
 
           <!-- 상단 파란색 박스들 -->
-          <div class="flex-1 flex gap-4">
+          <div
+            class="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
+          >
             <div
-              class="flex-1 bg-blue-100 p-4 rounded-lg flex items-center justify-center"
+              class="bg-blue-100 p-4 rounded-lg flex items-center justify-center"
             >
               <span class="font-bold">e-Learning</span>
             </div>
             <div
-              class="flex-1 bg-blue-100 p-4 rounded-lg flex items-center justify-center"
+              class="bg-blue-100 p-4 rounded-lg flex items-center justify-center"
             >
               <span class="font-bold">통신/텔레매틱스</span>
             </div>
             <div
-              class="flex-1 bg-blue-100 p-4 rounded-lg flex items-center justify-center"
+              class="bg-blue-100 p-4 rounded-lg flex items-center justify-center"
             >
               <span class="font-bold">물류/유통</span>
             </div>
             <div
-              class="flex-1 bg-blue-100 p-4 rounded-lg flex items-center justify-center"
+              class="bg-blue-100 p-4 rounded-lg flex items-center justify-center"
             >
               <span class="font-bold">제조/기타</span>
             </div>
@@ -63,32 +65,34 @@
         </div>
 
         <!-- To-Be 섹션 -->
-        <div class="flex gap-4 mb-4">
+        <div class="flex flex-col md:flex-row gap-4 mb-4">
           <div
-            class="w-32 bg-yellow-100 p-4 rounded-lg flex items-center justify-center"
+            class="w-full md:w-32 bg-yellow-100 p-4 rounded-lg flex items-center justify-center"
           >
             <span class="font-bold">To-Be</span>
           </div>
 
           <!-- 하단 노란색 박스들 -->
-          <div class="flex-1 flex gap-4">
+          <div
+            class="flex-1 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4"
+          >
             <div
-              class="flex-1 bg-yellow-100 p-4 rounded-lg flex items-center justify-center"
+              class="bg-yellow-100 p-4 rounded-lg flex items-center justify-center text-center"
             >
               <span class="font-bold">IoT/<br />Machine<br />Learning</span>
             </div>
             <div
-              class="flex-1 bg-yellow-100 p-4 rounded-lg flex items-center justify-center"
+              class="bg-yellow-100 p-4 rounded-lg flex items-center justify-center"
             >
               <span class="font-bold">Health Care</span>
             </div>
             <div
-              class="flex-1 bg-yellow-100 p-4 rounded-lg flex items-center justify-center"
+              class="bg-yellow-100 p-4 rounded-lg flex items-center justify-center"
             >
               <span class="font-bold">Google<br />Analytics</span>
             </div>
             <div
-              class="flex-1 bg-yellow-100 p-4 rounded-lg flex items-center justify-center"
+              class="bg-yellow-100 p-4 rounded-lg flex items-center justify-center"
             >
               <span class="font-bold">Smart Farm</span>
             </div>
