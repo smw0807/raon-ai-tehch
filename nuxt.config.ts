@@ -8,4 +8,9 @@ export default defineNuxtConfig({
   vite: {
     plugins: [tailwindcss()],
   },
+  router: {
+    options: {
+      hashMode: true,
+    },
+  },
 });
