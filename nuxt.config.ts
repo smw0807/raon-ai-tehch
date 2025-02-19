@@ -7,6 +7,14 @@ export default defineNuxtConfig({
   app: {
     baseURL: '/raon-ai-tehch/',
     buildAssetsDir: 'assets',
+    head: {
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css',
+        },
+      ],
+    },
   },
   css: ['~/assets/css/main.css'],
   vite: {
