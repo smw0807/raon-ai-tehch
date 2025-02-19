@@ -23,17 +23,17 @@ const toggleMenu = () => {
               <div class="ml-10 flex items-baseline space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a
-                  href="/"
+                  href="#/"
                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                   >HOME</a
                 >
                 <a
-                  href="/#greeting"
+                  href="#/greeting"
                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                   >인사말</a
                 >
                 <a
-                  href="/#employ"
+                  href="#/employ"
                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
                   >채용정보</a
                 >
@@ -106,17 +106,17 @@ const toggleMenu = () => {
         <div class="md:hidden" id="mobile-menu" v-show="isOpen">
           <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
             <a
-              href="/"
+              href="#/"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >HOME</a
             >
             <a
-              href="/#greeting"
+              href="#/greeting"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >인사말</a
             >
             <a
-              href="/#employ"
+              href="#/employ"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
               >채용정보</a
             >
