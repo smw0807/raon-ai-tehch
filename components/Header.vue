@@ -1,8 +1,14 @@
 <script setup lang="ts">
 const isOpen = ref(false);
+const router = useRouter();
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value;
+};
+
+const navigateTo = (path: string) => {
+  router.push(path);
+  isOpen.value = false; // 모바일 메뉴 닫기
 };
 </script>
 
@@ -22,20 +28,23 @@ const toggleMenu = () => {
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <NuxtLink
-                  to="/"
+                <a
+                  href="#/"
+                  @click.prevent="navigateTo('/')"
                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >HOME</NuxtLink
+                  >HOME</a
                 >
-                <NuxtLink
-                  to="/greeting"
+                <a
+                  href="#/greeting"
+                  @click.prevent="navigateTo('/greeting')"
                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >인사말</NuxtLink
+                  >인사말</a
                 >
-                <NuxtLink
-                  to="/employ"
+                <a
+                  href="#/employ"
+                  @click.prevent="navigateTo('/employ')"
                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >채용정보</NuxtLink
+                  >채용정보</a
                 >
                 <NuxtLink
                   to="#"
@@ -105,20 +114,23 @@ const toggleMenu = () => {
       >
         <div class="md:hidden" id="mobile-menu" v-show="isOpen">
           <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-            <NuxtLink
-              to="/"
+            <a
+              href="#/"
+              @click.prevent="navigateTo('/')"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >HOME</NuxtLink
+              >HOME</a
             >
-            <NuxtLink
-              to="/greeting"
+            <a
+              href="#/greeting"
+              @click.prevent="navigateTo('/greeting')"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >인사말</NuxtLink
+              >인사말</a
             >
-            <NuxtLink
-              to="/employ"
+            <a
+              href="#/employ"
+              @click.prevent="navigateTo('/employ')"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >채용정보</NuxtLink
+              >채용정보</a
             >
             <NuxtLink
               to="#"
