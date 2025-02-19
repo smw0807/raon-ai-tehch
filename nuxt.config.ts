@@ -13,4 +13,12 @@ export default defineNuxtConfig({
       hashMode: true,
     },
   },
+  // GitHub Pages를 위한 설정
+  experimental: {
+    payloadExtraction: false,
+  },
+  // 빌드 설정
+  nitro: {
+    preset: 'github_pages',
+  },
 });

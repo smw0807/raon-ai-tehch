@@ -22,25 +22,25 @@ const toggleMenu = () => {
             <div class="hidden md:block">
               <div class="ml-10 flex items-baseline space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a
-                  href="#/"
+                <NuxtLink
+                  to="/"
                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >HOME</a
+                  >HOME</NuxtLink
                 >
-                <a
-                  href="#/greeting"
+                <NuxtLink
+                  to="/greeting"
                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >인사말</a
+                  >인사말</NuxtLink
                 >
-                <a
-                  href="#/employ"
+                <NuxtLink
+                  to="/employ"
                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >채용정보</a
+                  >채용정보</NuxtLink
                 >
-                <a
-                  href="#"
+                <NuxtLink
+                  to="#"
                   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >공지사항</a
+                  >공지사항</NuxtLink
                 >
               </div>
             </div>
@@ -105,25 +105,25 @@ const toggleMenu = () => {
       >
         <div class="md:hidden" id="mobile-menu" v-show="isOpen">
           <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
-            <a
-              href="#/"
+            <NuxtLink
+              to="/"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >HOME</a
+              >HOME</NuxtLink
             >
-            <a
-              href="#/greeting"
+            <NuxtLink
+              to="/greeting"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >인사말</a
+              >인사말</NuxtLink
             >
-            <a
-              href="#/employ"
+            <NuxtLink
+              to="/employ"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >채용정보</a
+              >채용정보</NuxtLink
             >
-            <a
-              href="#"
+            <NuxtLink
+              to="#"
               class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-              >공지사항</a
+              >공지사항</NuxtLink
             >
           </div>
         </div>
